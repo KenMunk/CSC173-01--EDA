@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 RawData/LargeFiles/* filter=lfs diff=lfs merge=lfs -text
+WrangledData/LargeFiles/* filter=lfs diff=lfs merge=lfs -text
