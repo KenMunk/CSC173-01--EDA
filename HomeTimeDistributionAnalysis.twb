@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0525.0851                               -->
+<workbook original-version='18.1' source-build='2022.1.2 (20221.22.0525.0851)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='CompleteParticipantStatusLogsTimeDistribution' inline='true' name='federated.0ubg5vg16i73kw1128yyj0woqud6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='CompleteParticipantStatusLogsTimeDistribution' name='textscan.0j13y700ti0j730zjjnfh1ent1bd'>
+            <connection class='textscan' directory='D:/SchoolRepositories/CSC173-01--EDA/WrangledData' filename='CompleteParticipantStatusLogsTimeDistribution.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0j13y700ti0j730zjjnfh1ent1bd' name='CompleteParticipantStatusLogsTimeDistribution.csv' table='[CompleteParticipantStatusLogsTimeDistribution#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='timestamp' ordinal='0' />
+            <column datatype='integer' name='participantId' ordinal='1' />
+            <column datatype='string' name='currentMode' ordinal='2' />
+            <column datatype='integer' name='CntAtHome' ordinal='3' />
+            <column datatype='integer' name='CntAtRecreation' ordinal='4' />
+            <column datatype='integer' name='CntAtWork' ordinal='5' />
+            <column datatype='integer' name='CntTransport' ordinal='6' />
+            <column datatype='integer' name='CntAtRestaurant' ordinal='7' />
+            <column datatype='integer' name='TotalStatusUpdates' ordinal='8' />
+            <column datatype='string' name='hungerStatus' ordinal='9' />
+            <column datatype='string' name='sleepStatus' ordinal='10' />
+            <column datatype='integer' name='CntAwake' ordinal='11' />
+            <column datatype='integer' name='CntSleeping' ordinal='12' />
+            <column datatype='integer' name='CntPreparingToSleep' ordinal='13' />
+            <column datatype='integer' name='apartmentId' ordinal='14' />
+            <column datatype='integer' name='jobId' ordinal='15' />
+            <column datatype='string' name='financialStatus' ordinal='16' />
+            <column datatype='integer' name='dailyFoodBudget' ordinal='17' />
+            <column datatype='real' name='weeklyExtraBudget' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0j13y700ti0j730zjjnfh1ent1bd' name='CompleteParticipantStatusLogsTimeDistribution.csv' table='[CompleteParticipantStatusLogsTimeDistribution#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='timestamp' ordinal='0' />
+            <column datatype='integer' name='participantId' ordinal='1' />
+            <column datatype='string' name='currentMode' ordinal='2' />
+            <column datatype='integer' name='CntAtHome' ordinal='3' />
+            <column datatype='integer' name='CntAtRecreation' ordinal='4' />
+            <column datatype='integer' name='CntAtWork' ordinal='5' />
+            <column datatype='integer' name='CntTransport' ordinal='6' />
+            <column datatype='integer' name='CntAtRestaurant' ordinal='7' />
+            <column datatype='integer' name='TotalStatusUpdates' ordinal='8' />
+            <column datatype='string' name='hungerStatus' ordinal='9' />
+            <column datatype='string' name='sleepStatus' ordinal='10' />
+            <column datatype='integer' name='CntAwake' ordinal='11' />
+            <column datatype='integer' name='CntSleeping' ordinal='12' />
+            <column datatype='integer' name='CntPreparingToSleep' ordinal='13' />
+            <column datatype='integer' name='apartmentId' ordinal='14' />
+            <column datatype='integer' name='jobId' ordinal='15' />
+            <column datatype='string' name='financialStatus' ordinal='16' />
+            <column datatype='integer' name='dailyFoodBudget' ordinal='17' />
+            <column datatype='real' name='weeklyExtraBudget' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>participantId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[participantId]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>participantId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currentMode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[currentMode]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>currentMode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntAtHome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntAtHome]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntAtHome</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntAtRecreation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntAtRecreation]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntAtRecreation</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntAtWork</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntAtWork]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntAtWork</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntTransport</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntTransport]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntTransport</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntAtRestaurant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntAtRestaurant]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntAtRestaurant</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalStatusUpdates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalStatusUpdates]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>TotalStatusUpdates</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hungerStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hungerStatus]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>hungerStatus</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sleepStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sleepStatus]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>sleepStatus</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntAwake</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntAwake]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntAwake</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntSleeping</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntSleeping]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntSleeping</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CntPreparingToSleep</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CntPreparingToSleep]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>CntPreparingToSleep</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>apartmentId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[apartmentId]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>apartmentId</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jobId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jobId]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>jobId</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>financialStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[financialStatus]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>financialStatus</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dailyFoodBudget</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dailyFoodBudget]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>dailyFoodBudget</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weeklyExtraBudget</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weeklyExtraBudget]</local-name>
+            <parent-name>[CompleteParticipantStatusLogsTimeDistribution.csv]</parent-name>
+            <remote-alias>weeklyExtraBudget</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='DistributionOfMode' datatype='real' name='[Calculation_836543679786696707]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='case [currentMode]&#13;&#10;    when &quot;AtHome&quot; then [CntAtHome]/[TotalStatusUpdates]&#13;&#10;    when &quot;AtRecreation&quot; then [CntAtRecreation] / [TotalStatusUpdates]&#13;&#10;    when &quot;AtRestaurant&quot; then [CntAtRestaurant]/[TotalStatusUpdates]&#13;&#10;    when &quot;AtWork&quot; then [CntAtWork] / [TotalStatusUpdates]&#13;&#10;    when &quot;transport&quot; then ([TotalStatusUpdates]-([CntAtWork]+[CntAtRestaurant]+[CntAtRecreation]+[CntAtHome])) / [TotalStatusUpdates]&#13;&#10;end' />
+      </column>
+      <column caption='Cnt At Home' datatype='integer' name='[CntAtHome]' role='measure' type='quantitative' />
+      <column caption='Cnt At Recreation' datatype='integer' name='[CntAtRecreation]' role='measure' type='quantitative' />
+      <column caption='Cnt At Restaurant' datatype='integer' name='[CntAtRestaurant]' role='measure' type='quantitative' />
+      <column caption='Cnt At Work' datatype='integer' name='[CntAtWork]' role='measure' type='quantitative' />
+      <column caption='Cnt Awake' datatype='integer' name='[CntAwake]' role='measure' type='quantitative' />
+      <column caption='Cnt Preparing To Sleep' datatype='integer' name='[CntPreparingToSleep]' role='measure' type='quantitative' />
+      <column caption='Cnt Sleeping' datatype='integer' name='[CntSleeping]' role='measure' type='quantitative' />
+      <column caption='Cnt Transport' datatype='integer' name='[CntTransport]' role='measure' type='quantitative' />
+      <column caption='Total Status Updates' datatype='integer' name='[TotalStatusUpdates]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='CompleteParticipantStatusLogsTimeDistribution.csv' datatype='table' name='[__tableau_internal_object_id__].[CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF]' role='measure' type='quantitative' />
+      <column caption='Apartment Id' datatype='integer' name='[apartmentId]' role='dimension' type='ordinal' />
+      <column caption='Current Mode' datatype='string' name='[currentMode]' role='dimension' type='nominal' />
+      <column caption='Daily Food Budget' datatype='integer' name='[dailyFoodBudget]' role='measure' type='quantitative' />
+      <column caption='Financial Status' datatype='string' name='[financialStatus]' role='dimension' type='nominal' />
+      <column caption='Hunger Status' datatype='string' name='[hungerStatus]' role='dimension' type='nominal' />
+      <column caption='Job Id' datatype='integer' name='[jobId]' role='dimension' type='ordinal' />
+      <column caption='Participant Id' datatype='integer' name='[participantId]' role='dimension' type='ordinal' />
+      <column caption='Sleep Status' datatype='string' name='[sleepStatus]' role='dimension' type='nominal' />
+      <column caption='Timestamp' datatype='datetime' name='[timestamp]' role='dimension' type='ordinal' />
+      <column caption='Weekly Extra Budget' datatype='real' name='[weeklyExtraBudget]' role='measure' type='quantitative' />
+      <column-instance column='[currentMode]' derivation='Max' name='[max:currentMode:nk]' pivot='key' type='nominal' />
+      <column-instance column='[currentMode]' derivation='None' name='[none:currentMode:nk]' pivot='key' type='nominal' />
+      <column-instance column='[sleepStatus]' derivation='None' name='[none:sleepStatus:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:sleepStatus:nk]' type='palette'>
+            <map to='#051c61'>
+              <bucket>&quot;Sleeping&quot;</bucket>
+            </map>
+            <map to='#9d53f2'>
+              <bucket>&quot;PrepareToSleep&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Awake&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[max:currentMode:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;AtHome&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Transport&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;AtWork&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AtRestaurant&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AtRecreation&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:currentMode:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;AtHome&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Transport&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;AtWork&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;AtRestaurant&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AtRecreation&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CompleteParticipantStatusLogsTimeDistribution.csv' id='CompleteParticipantStatusLogsTimeDistribution.csv_F32B33D36A7F44F89CC70F9027E418FF'>
+            <properties context=''>
+              <relation connection='textscan.0j13y700ti0j730zjjnfh1ent1bd' name='CompleteParticipantStatusLogsTimeDistribution.csv' table='[CompleteParticipantStatusLogsTimeDistribution#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='timestamp' ordinal='0' />
+                  <column datatype='integer' name='participantId' ordinal='1' />
+                  <column datatype='string' name='currentMode' ordinal='2' />
+                  <column datatype='integer' name='CntAtHome' ordinal='3' />
+                  <column datatype='integer' name='CntAtRecreation' ordinal='4' />
+                  <column datatype='integer' name='CntAtWork' ordinal='5' />
+                  <column datatype='integer' name='CntTransport' ordinal='6' />
+                  <column datatype='integer' name='CntAtRestaurant' ordinal='7' />
+                  <column datatype='integer' name='TotalStatusUpdates' ordinal='8' />
+                  <column datatype='string' name='hungerStatus' ordinal='9' />
+                  <column datatype='string' name='sleepStatus' ordinal='10' />
+                  <column datatype='integer' name='CntAwake' ordinal='11' />
+                  <column datatype='integer' name='CntSleeping' ordinal='12' />
+                  <column datatype='integer' name='CntPreparingToSleep' ordinal='13' />
+                  <column datatype='integer' name='apartmentId' ordinal='14' />
+                  <column datatype='integer' name='jobId' ordinal='15' />
+                  <column datatype='string' name='financialStatus' ordinal='16' />
+                  <column datatype='integer' name='dailyFoodBudget' ordinal='17' />
+                  <column datatype='real' name='weeklyExtraBudget' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='HomeTimeDistribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>How the average participant spends their time at home</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CompleteParticipantStatusLogsTimeDistribution' name='federated.0ubg5vg16i73kw1128yyj0woqud6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ubg5vg16i73kw1128yyj0woqud6'>
+            <column-instance column='[sleepStatus]' derivation='Count' name='[cnt:sleepStatus:qk]' pivot='key' type='quantitative' />
+            <column caption='Current Mode' datatype='string' name='[currentMode]' role='dimension' type='nominal' />
+            <column-instance column='[currentMode]' derivation='None' name='[none:currentMode:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sleepStatus]' derivation='None' name='[none:sleepStatus:nk]' pivot='key' type='nominal' />
+            <column caption='Sleep Status' datatype='string' name='[sleepStatus]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:currentMode:nk]'>
+            <groupfilter function='member' level='[none:currentMode:nk]' member='&quot;AtHome&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]' direction='ASC' using='[federated.0ubg5vg16i73kw1128yyj0woqud6].[cnt:sleepStatus:qk]' />
+          <slices>
+            <column>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:currentMode:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='690' />
+            <format attr='text-orientation' value='-90' />
+            <format attr='height' value='710' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]' />
+              <wedge-size column='[federated.0ubg5vg16i73kw1128yyj0woqud6].[cnt:sleepStatus:qk]' />
+              <text column='[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>&lt;</run>
+                <run fontalignment='0'>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]</run>
+                <run fontalignment='0'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8CE2A097-DAC0-491E-963C-876E03F74E41}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='HomeTimeDistribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='2' param='[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[dy:timestamp:ok]</field>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:Calculation_836543679782195202:qk]</field>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:currentMode:nk]</field>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:participantId:ok]</field>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[none:sleepStatus:nk]</field>
+            <field>[federated.0ubg5vg16i73kw1128yyj0woqud6].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{872DC778-A24D-4255-8345-F1F61D606C7A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='HomeTimeDistribution' width='192'>
+      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
+      qPb/QW6ESNF6WRQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

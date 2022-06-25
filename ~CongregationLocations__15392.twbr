@@ -880,7 +880,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' name='Q3a--ActivityHubs'>
+    <window class='worksheet' maximized='true' name='Q3a--ActivityHubs'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -966,7 +966,7 @@
       </cards>
       <simple-id uuid='{CC4D9045-1CC5-4EEB-87B5-0200DCC419BD}' />
     </window>
-    <window class='worksheet' maximized='true' name='Q5--PrioritizedHubsMap'>
+    <window class='worksheet' name='Q5--PrioritizedHubsMap'>
       <cards>
         <edge name='left'>
           <strip size='160'>
